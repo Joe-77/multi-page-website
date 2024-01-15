@@ -1,0 +1,8 @@
+
+const WebApp = () => {
+  return (
+    <div>WebApp</div>
+  )
+}
+
+export default WebApp

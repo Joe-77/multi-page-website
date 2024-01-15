@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo-dark.png";
+import logo from "../../assets/logo-dark.png";
 import { RiMenu3Line } from "react-icons/ri";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
@@ -7,8 +7,15 @@ import { useState } from "react";
 const Header = () => {
   const [hideMenu, setHideMenu] = useState(false);
 
+  window.onscroll = () => {
+    document.querySelector(".menu")?.classList.add("right-[-500px]");
+    setTimeout(() => {
+      setHideMenu(true);
+    }, 1000);
+  };
+
   return (
-    <nav>
+    <nav className={`w-full ${hideMenu && `overflow-hidden`}`}>
       <div className="flex justify-between items-center py-5">
         <Link to="/" className="logo w-36 sm:w-52">
           <img src={logo} alt="" />
@@ -22,8 +29,8 @@ const Header = () => {
             <RiMenu3Line />
           </span>
           <ul
-            className={`absolute z-50 top-[-20px] sm:static sm:top-0 bg-black text-white sm:bg-white sm:text-black min-h-screen sm:min-h-5 w-40 sm:w-auto ${
-              hideMenu ? "right-[-500px] w-0" : "right-[-16px]"
+            className={`menu absolute first-letter: z-50 top-[-20px] sm:static sm:top-0 bg-black text-white sm:bg-white sm:text-black min-h-[200vh] sm:min-h-5  w-40 sm:w-auto ${
+              hideMenu ? "right-[-500px]" : "right-[-16px]"
             } px-3 py-2 leading-8 sm:leading-6 duration-700 sm:flex items-center gap-4 capitalize text-sm`}
           >
             <span

@@ -1,6 +1,6 @@
-import Img1 from "../../assets/1.svg";
-import Img2 from "../../assets/2.svg";
-import Img3 from "../../assets/3.svg";
+import Img1 from "../assets/1.svg";
+import Img2 from "../assets/2.svg";
+import Img3 from "../assets/3.svg";
 
 const Page = () => {
   return (

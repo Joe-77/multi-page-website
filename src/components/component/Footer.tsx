@@ -5,7 +5,7 @@ import Msg from "./Msg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black mt-40 text-white pt-7 relative">
+    <footer className="bg-black mt-40 text-white pt-7 relative px-4 lg:px-0">
       <Msg/>
       <div className="container m-auto px-4 sm:px-0 pt-28 pb-5 sm:pt-14">
         <div className="flex items-center justify-between pb-5 border-b-[1px] border-b-gray-600">

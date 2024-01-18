@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Msg = () => {
   return (
-    <div className="absolute w-3/4 lg:w-1/2 left-1/2 top-[-120px] px-10 lg:px-4 py-5 rounded-lg -translate-x-1/2 bg-[#e7816b]">
+    <div className="absolute w-3/4 lg:w-1/2 left-1/2 top-[-120px] px-10 lg:px-4 py-5 rounded-lg -translate-x-1/2 bg-primary">
       <div className="absolute bg-circle w-3/4 lg:w-1/2 h-full bg-cover bg-no-repeat"></div>
       <div className="relative z-50 flex gap-4 flex-col sm:flex-row items-center justify-center sm:justify-between">
         <div className="w-60 m-auto sm:m-0 text-center sm:text-start">
@@ -13,9 +15,12 @@ const Msg = () => {
           </p>
         </div>
         <div>
-          <button className="bg-[#FFAD9B] px-2 py-1 cursor-pointer rounded-md duration-500 hover:scale-105 w-28">
+          <Link
+            to="/contact"
+            className="block bg-[#FFAD9B] px-2 py-1 cursor-pointer rounded-md duration-500 hover:scale-105 w-28"
+          >
             Get in touch
-          </button>
+          </Link>
         </div>
       </div>
     </div>

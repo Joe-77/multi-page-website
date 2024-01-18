@@ -1,9 +1,9 @@
-import frame from "../../assets/frame.png";
-import circle from "../../assets/bg-pattern-small-circle.svg";
+import frame from "../assets/frame.png";
+import circle from "../assets/bg-pattern-small-circle.svg";
 
 const About = () => {
   return (
-    <div className="w-full h-[650px] sm:h-80 bg-[#E7816B] px-5 overflow-hidden mt-4 relative">
+    <div className="w-full h-[650px] sm:h-80 bg-primary px-5 overflow-hidden mt-4 relative">
       <div className=" absolute right-[170px] top-10 z-20 w-60 h-60">
         <img className="w-full h-full" src={circle} alt="" />
       </div>

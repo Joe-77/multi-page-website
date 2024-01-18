@@ -3,3 +3,19 @@
 @tailwind utilities;
 
 
+.map2,
+.map4 {
+  flex-direction: row-reverse !important;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.map1 {
+  margin-top: 12px;
+}
+
+@media (max-width : 640px) {
+  .map2,
+.map4 {
+  flex-direction: column !important;
+}
+}

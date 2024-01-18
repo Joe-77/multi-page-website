@@ -8,6 +8,10 @@ export default {
         appDesign: "url('/src/assets/image-app-design.jpg')",
         graphic: "url('/src/assets/image-graphic-design.jpg')",
         circle: "url('/src/assets/bg-pattern-call-to-action.svg')",
+        oneCircle: "url('/src/assets/one.svg')",
+      },
+      backgroundColor: {
+        primary: "#E7816B",
       },
     },
   },

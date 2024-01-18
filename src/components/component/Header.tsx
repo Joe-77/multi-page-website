@@ -29,7 +29,7 @@ const Header = () => {
             <RiMenu3Line />
           </span>
           <ul
-            className={`menu absolute first-letter: z-50 top-[-20px] sm:static sm:top-0 bg-black text-white sm:bg-white sm:text-black min-h-[200vh] sm:min-h-5  w-40 sm:w-auto ${
+            className={`menu absolute first-letter: z-[999] top-[-20px] sm:static sm:top-0 bg-black text-white sm:bg-white sm:text-black min-h-[200vh] sm:min-h-5  w-40 sm:w-auto ${
               hideMenu ? "right-[-500px]" : "right-[-16px]"
             } px-3 py-2 leading-8 sm:leading-6 duration-700 sm:flex items-center gap-4 capitalize text-sm`}
           >

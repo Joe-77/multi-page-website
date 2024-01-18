@@ -12,7 +12,7 @@ const Footer = () => {
           <Link to="/">
             <img className="w-28 sm:w-40" src={logo} alt="" />
           </Link>
-          <ul className="flex gap-4 text-sm ">
+          <ul className="flex gap-4 text-[11px] sm:text-sm">
             <li>
               <Link to="/about">our company</Link>
             </li>

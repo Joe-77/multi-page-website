@@ -25,11 +25,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="grid grid-cols-3 gap-2 flex-wrap items-end justify-between mt-5 pb-5">
-          <div>
-            <p className="text-[7px] sm:text-xs leading-6 text-gray-500">
-              Designo Central Office 3886 Wellington Street Toronto, Ontario M9C
-              3J5
-            </p>
+          <div className="text-[7px] sm:text-sm leading-6 text-gray-500 flex flex-col gap-2">
+            <p>Designo Central Office</p>
+            <p>3886 Wellington Street</p>
+            <p>Toronto, Ontario M9C 3J5</p>
           </div>
           <div className="text-[8px] sm:text-xs flex flex-col gap-2 text-gray-500 mb-2">
             <p>Contact Us (Central Office)</p>

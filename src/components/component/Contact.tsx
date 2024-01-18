@@ -2,6 +2,7 @@ import Country from "./Country";
 import Form from "./Form";
 
 const Contact = () => {
+    window.scrollTo(0,0)
   return (
     <section>
       <div className="bg-primary flex flex-col sm:flex-row justify-around sm:items-center sm:h-[420px] relative px-6 sm:px-0 py-10 sm:py-0 mt-3">

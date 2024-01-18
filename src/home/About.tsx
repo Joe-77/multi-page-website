@@ -24,7 +24,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <img className="relative top-[-100px] sm:top-0 md:top-[-70px] lg:h-[500px]" src={frame} alt="" />
+          <img className="relative top-[-60px] sm:top-0 md:top-[-70px] lg:h-[500px]" src={frame} alt="" />
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const Form = () => {
   } = useForm({ mode: "all" });
 
   const form: any = useRef();
-  const sendEmail = (e: any) => {
+  const sendEmail = () => {
     emailjs
       .sendForm(
         "service_t3dbwlo",
@@ -36,14 +36,14 @@ const Form = () => {
         "d45HPl57ZUSR2nUWW"
       )
       .then(
-        (result) => {
+        () => {
           toast.success("Message Sent Successfully");
           mail.value = '';
           name.value = "";
           phone.value = "";
           msgElement.value = "";
         },
-        (error) => {
+        () => {
           toast.error("Error!");
         }
       );
